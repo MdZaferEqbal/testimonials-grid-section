@@ -1,0 +1,137 @@
+* {
+    margin: 20px 30px;
+    padding: 0;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 13px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-areas: 
+        "daniel     daniel      jonathan        kira"
+        "jeanette   patrick     patrick         kira";
+    grid-gap: 20px;
+}
+
+.dark-bio-card {
+    color: hsl(0, 0%, 81%);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0;
+    box-shadow: 2.5px 2.5px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+.light-bio-card {
+    color: hsl(217, 19%, 35%);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0;
+    box-shadow: 2.5px 2.5px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+.bio-heading {
+    display: flex;
+    margin: 0;
+}
+
+.bio-card-details {
+    margin: 0 -50px;
+}
+
+.card-display-pic {
+    height: 25%;
+    border: 3px solid hsl(0, 0%, 81%, 0.5);
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.card-name {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.card-qualification {
+    color: hsl(0, 0%, 81%, 0.5);
+    margin-top: -10px;
+}
+
+.card-main-description {
+    margin-top: 0;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+.card-description {
+    color: hsl(0, 0%, 81%, 0.5);
+}
+
+.light-card-qualification {
+    color: hsl(217, 19%, 35%, 0.5);
+    margin-top: -10px;
+}
+
+.light-card-description {
+    color: hsl(217, 19%, 35%, 0.5);
+}
+
+.daniel-bio-card {
+    background: hsl(263, 55%, 52%);
+    background-image: url('../img/quote-left-solid.svg');
+    background-repeat: no-repeat;
+    background-position: top right 50px;
+    background-blend-mode: soft-light;
+    background-size: 200px;
+    grid-area: daniel;
+}
+
+.jonathan-bio-card {
+    background: hsl(217, 19%, 35%);
+    grid-area: jonathan;
+}
+
+.jeanette-bio-card {
+    background-color: hsl(0, 0%, 100%);
+    grid-area: jeanette;
+}
+
+.patrick-bio-card {
+    background: hsl(219, 29%, 14%);
+    grid-area: patrick;
+}
+
+.kira-bio-card {
+    background-color: hsl(0, 0%, 100%);
+    grid-area: kira;
+}
+
+@media (max-width: 391px) {
+    * {
+        margin: 20px 10px;
+    }
+
+    .daniel-bio-card {
+        background-position: top right 50px left 50px;
+    }
+
+    .wrapper {
+        grid-template-areas: 
+            "daniel"           
+            "jonathan"
+            "jeanette"
+            "patrick"
+            "kira";
+    }
+
+    .bio-card-details {
+        margin: 0;
+    }
+}
+
+@media (min-width: 392px) and (max-width: 1440px) {
+    .wrapper {
+        grid-template-areas: 
+            "daniel     jonathan"           
+            "jeanette   patrick"
+            "kira       kira";
+    }
+}
