@@ -63,6 +63,7 @@ body {
     margin-top: 0;
     font-weight: bolder;
     letter-spacing: 1px;
+    font-size: large;
 }
 
 .card-description {
@@ -106,7 +107,8 @@ body {
 .kira-bio-card {
     background-color: hsl(0, 0%, 100%);
     grid-area: kira;
-    width: 200px;
+    width: 250px;
+    align-content: center;
 }
 
 @media (max-width: 391px) {
