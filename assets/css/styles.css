@@ -5,6 +5,10 @@
     font-size: 13px;
 }
 
+body {
+    background: hsl(0, 0%, 81%);
+}
+
 .wrapper {
     display: grid;
     grid-template-areas: 
@@ -102,6 +106,7 @@
 .kira-bio-card {
     background-color: hsl(0, 0%, 100%);
     grid-area: kira;
+    width: 200px;
 }
 
 @media (max-width: 391px) {
@@ -122,6 +127,10 @@
             "kira";
     }
 
+    .kira-bio-card {
+        width: auto;
+    }
+
     .bio-card-details {
         margin: 0;
     }
@@ -133,5 +142,9 @@
             "daniel     jonathan"           
             "jeanette   patrick"
             "kira       kira";
+    }
+
+    .kira-bio-card {
+        width: auto;
     }
 }
